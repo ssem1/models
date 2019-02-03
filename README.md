@@ -20,4 +20,4 @@ We love contributors and any models you build can be included via Pull Requests;
 
 Over time, models and statistics will become out-of-date and updates are encouraged
 
-The goal is to seperate papers and studies from models, but if a paper accompanies a model free to keep them together
+The goal is to separate papers and studies from models, but if a paper accompanies a model free to keep them together
