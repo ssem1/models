@@ -19,8 +19,12 @@ OTM_Call = df.OTM
 OTM_Put = df.OTMP
 ATM_Put = df.ATMP
 ITM_Put = df.ITMP
+WR_OTM_Call = df.WOTM
+WR_OTM_Put = df.WOTMP
 strangle = OTM_Call + OTM_Put
 straddle = ATM_Call + ATM_Put
+Bull_Spread = ATM_Call + WR_OTM_Call
+Bear_Spread = ATM_Put + WR_OTM_Put
 xaxis = np.arange(1,42)
 # output to static HTML file
 output_file("Calls.html")
@@ -49,8 +53,22 @@ strad.line(xaxis, ATM_Call, color='#6441a5', legend="ATM Call", line_width=3)
 strad.line(xaxis, ATM_Put, color='#657786', legend="ATM Put", line_width=3)
 strad.line(xaxis, straddle, color='#355ebe', legend="Straddle", line_width=3)
 
+bull = figure(title="Bull Spread", x_axis_label='Stock Price', y_axis_label='Profit', width = 800)
+
+bull.line(xaxis, ATM_Call, color='#6C6B74', legend="Purchase ATM Call", line_width=3)
+bull.line(xaxis, WR_OTM_Call, color='#2E303E', legend="Write OTM Call", line_width=3)
+bull.line(xaxis, Bull_Spread, color='#9199BE', legend="Bull Spread", line_width=3)
+
+bear = figure(title="Bear Spread", x_axis_label='Stock Price', y_axis_label='Profit', width = 800)
+
+bear.line(xaxis, ATM_Put, color='#F29D4B', legend="Purchase ATM Put", line_width=3)
+bear.line(xaxis, WR_OTM_Put, color='#D57030', legend="Write OTM Put", line_width=3)
+bear.line(xaxis, Bear_Spread, color='#8B281F', legend="Bear Spread", line_width=3)
+
 # show the results
 #show(c)
 #show(p)
 #show(stran)
-show(strad)
+#show(strad)
+#show(bull)
+#show(bear)
