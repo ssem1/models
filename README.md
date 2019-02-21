@@ -6,7 +6,7 @@ This repo is dedicated to models, case-studies, and general analytics that power
 
 ## Getting Started
 
-Primarily models will be built in Python. However a handful will be written using TensorFlow.js and another handful built using ML.NET. Build instructions can be found in the individual repos sorted by language.
+Recommend using [Anaconda](https://www.anaconda.com/distribution/). Also pip install numpy matplotlib scipy, pip install scikit-learn --> pip install pillow --> pip install h5py --> pip install tensorflow --> pip install keras should cover all needed libraries for use in this part of the repo.
 
 For questions or discussions: [![Discord](https://user-images.githubusercontent.com/7288322/34471967-1df7808a-efbb-11e7-9088-ed0b04151291.png)](https://discord.gg/YzeEJ4)
 
