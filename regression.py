@@ -44,6 +44,4 @@ def forecast(ticker, length):
     with open('data.json', 'w') as outfile:
         json.dump(list_prediction, outfile)
     # plt.show()
-    return confidence
-
-forecast(ticker1, length1)
+    return list_prediction
