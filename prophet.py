@@ -16,6 +16,9 @@ timeframe = '5y'
 N = 365
 
 def Predict(ticker, timeframe, N):
+    ticker = str(ticker)
+    timeframe = str(timeframe)
+    #N=int(N)
     df = p.chartDF(ticker, timeframe)
     df = df[['close']]
     df.reset_index(level=0, inplace=True)
@@ -27,12 +30,12 @@ def Predict(ticker, timeframe, N):
     forecast['day_week'] = forecast.ds.dt.weekday_name
     forecast = forecast[forecast.day_week != 'Sunday']
     forecast = forecast[forecast.day_week != 'Saturday']
-    #trend = forecast['trend'].tolist()
+    trend = forecast.to_json()
     #print(forecast)
     #print(trend)
     #print(forecast)
     #m.plot(forecast,xlabel='Date', ylabel='Price')
     #m.plot_components(forecast)
     #plt.show()
-    return forecast
-Predict(ticker, timeframe, N)
+    return trend
+#Predict(ticker, timeframe, N)
