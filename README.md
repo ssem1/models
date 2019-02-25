@@ -8,12 +8,12 @@ Approved models by the core malgo team will be included in the API for subsequen
 
 ## Getting Started
 
-Recommend using [Anaconda](https://www.anaconda.com/distribution/). Anaconda does not come with TensorFlow, Keras, or Prophet so you will need to install those seperately. We also use IEX for all of our data. pyEX provides a great interface to IEX and can be found [here]https://github.com/timkpaine/pyEX We are doing our best to phase out usage of Quandl but some models may still include it. 
+Recommend using [Anaconda](https://www.anaconda.com/distribution/). Anaconda does not come with TensorFlow, Keras, or Prophet so you will need to install those seperately. We also use IEX for all of our data. pyEX provides a great interface to IEX and can be found [here](https://github.com/timkpaine/pyEX) We are doing our best to phase out usage of Quandl but some models may still include it. 
 
 ```
 pip install pyex quandl tensorflow keras fbprophet 
 ```
-For additional information on installing [TensorFlow]https://www.tensorflow.org/install, [Keras]https://keras.io/#installation, and [Prophet]https://facebook.github.io/prophet/docs/installation.html 
+For additional information on installing [TensorFlow](https://www.tensorflow.org/install), [Keras](https://keras.io/#installation), and [Prophet](https://facebook.github.io/prophet/docs/installation.html) 
 
 If you do not wish to use Anaconda, the following should satisfy the requirements: 
 ```
