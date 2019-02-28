@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 Recommend using virtualenv to sandbox your work
 
-# Manual Install 
+### Manual Install 
 Recommend using [Anaconda](https://www.anaconda.com/distribution/). Anaconda does not come with TensorFlow, Keras, or Prophet so you will need to install those seperately. We also use IEX for all of our data. pyEX provides a great interface to IEX and can be found [here](https://github.com/timkpaine/pyEX) We are doing our best to phase out usage of Quandl but some models may still include it. 
 
 ```
