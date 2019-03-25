@@ -9,4 +9,5 @@ scipy
 scikit-learn
 h5py
 cython
+pystan
 fbprophet
