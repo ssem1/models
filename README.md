@@ -27,7 +27,7 @@ If you do not wish to use Anaconda, the following should satisfy the requirement
 pip install pyex quandl pandas numpy matplotlib scipy scikit-learn h5py tensorflow keras fbprophet
 ```
 
-For questions or discussions: [![Discord](https://user-images.githubusercontent.com/7288322/34471967-1df7808a-efbb-11e7-9088-ed0b04151291.png)](https://discord.gg/YzeEJ4)
+For questions or discussions: [![Discord](https://user-images.githubusercontent.com/7288322/34471967-1df7808a-efbb-11e7-9088-ed0b04151291.png)](https://discord.gg/YE8rUdq)
 
 ### Contributions
 
